@@ -1,4 +1,4 @@
-package com.cb.service;
+package com.cb.file;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
