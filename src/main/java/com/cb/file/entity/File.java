@@ -1,15 +1,19 @@
 package com.cb.file.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "cb_file")
 public class File extends BaseEntity {
-	
+
 	private String fileId;
-	
-	private String fileName;
-	
-	private String filePath;
+
+	private String name;
+
+	private String path;
+
+	private String url;
 
 	public String getFileId() {
 		return fileId;
@@ -19,20 +23,28 @@ public class File extends BaseEntity {
 		this.fileId = fileId;
 	}
 
-	public String getFileName() {
-		return fileName;
+	public String getName() {
+		return name;
 	}
 
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getFilePath() {
-		return filePath;
+	public String getPath() {
+		return path;
 	}
 
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 }
