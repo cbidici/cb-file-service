@@ -26,7 +26,7 @@ public class FileServiceImpl implements FileService {
 
 	@Autowired
 	private StorageService storageService;
-
+	
 	private File findByFileId(String fileId) {
 		Optional<File> fileOpt = fileRepository.findByFileId(fileId);
 		if (!fileOpt.isPresent()) {
